@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.lei.property.TraceLogAutoConfig,\
+com.lei.config.MyWebAppConfigurer,\
+com.lei.interceptor.LogRequestInterceptor,\
+com.lei.aspect.TraceLogAdvice,\
+com.lei.aspect.TraceLogAdviceConfig
+
