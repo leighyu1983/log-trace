@@ -23,6 +23,9 @@
 
         <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
         <lombok.version>1.18.10</lombok.version>
+        <spring.cloud.openfeign.version>2.0.2.RELEASE</spring.cloud.openfeign.version>
+        <openfeign.okhttp.version>9.5.0</openfeign.okhttp.version>
+        <okhttp3.version>3.10.0</okhttp3.version>
     </properties>
 
 
@@ -45,6 +48,23 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+            <!-- Feign start -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring.cloud.openfeign.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-okhttp</artifactId>
+                <version>${openfeign.okhttp.version}</version>
+            </dependency>
+            <!-- Feign end -->
         </dependencies>
     </dependencyManagement>
 </project>

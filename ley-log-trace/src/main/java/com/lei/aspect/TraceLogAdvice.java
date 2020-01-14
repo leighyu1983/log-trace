@@ -54,7 +54,7 @@ public class TraceLogAdvice implements MethodBeforeAdvice, AfterReturningAdvice,
         if (request != null) {
             logEntity.setHttpMethod(request.getMethod());
             logEntity.setClassMethod(method.getName());
-            logEntity.setClientIP(IPUtil.getIP(request));
+            logEntity.setClientIP(IPUtil.getIPs(request));
             logEntity.setContentType(request.getContentType());
             logEntity.setRequestUrl(request.getRequestURI());
             logEntity.setMethodParams(getMethodArgsString(objects));
