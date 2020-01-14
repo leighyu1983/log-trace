@@ -1,6 +1,6 @@
 trace-log:
   feign:
-#    enable: true
+    enable: true
   cut-point:
-    enable: false
+    enable: true
     expression: ""
