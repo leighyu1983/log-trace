@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>ley-log-trace</module>
+        <module>ley-springboot-log-trace</module>
         <module>ley-test-web</module>
         <module>ley-common</module>
     </modules>

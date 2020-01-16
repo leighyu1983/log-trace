@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>com.lei</groupId>
-            <artifactId>ley-log-trace</artifactId>
+            <artifactId>ley-springboot-log-trace</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
