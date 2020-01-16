@@ -13,7 +13,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Configuration
-public class LogRequestInterceptor implements HandlerInterceptor {
+public class LogTraceRequestInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String traceId = request.getHeader(Constant.DISTRIBUTED_TRACE_ID);

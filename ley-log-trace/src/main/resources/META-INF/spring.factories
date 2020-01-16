@@ -1,7 +1,9 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.lei.config.MyWebAppConfigurer,\
-com.lei.interceptor.LogRequestInterceptor,\
-com.lei.interceptor.FeignInterceptor,\
+com.lei.interceptor.LogTraceRequestInterceptor,\
+com.lei.plugins.LogTraceFeignInterceptor,\
+com.lei.plugins.LogTraceRestTemplateConfig,\
+com.lei.plugins.LogTraceRestTemplateInterceptor,\
 com.lei.aspect.TraceLogAdvice,\
 com.lei.aspect.TraceLogAdviceConfig
 
