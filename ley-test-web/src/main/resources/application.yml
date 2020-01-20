@@ -5,4 +5,5 @@ trace-log:
     enable: true
   cut-point:
     enable: true
-    expression: ""
+    expression: "execution(* com.lei.controller.SampleController.*(..))"
+#execution(* com..*.*Controller.*(..))
