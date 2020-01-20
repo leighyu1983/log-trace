@@ -42,7 +42,7 @@ public class TraceLogAdvice implements MethodBeforeAdvice, AfterReturningAdvice,
         try {
             request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         } catch (Exception ex) {
-            // won't handle
+            log.debug("", ex);
         }
         return request;
     }
